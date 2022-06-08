@@ -1,14 +1,22 @@
 var tasks = {};
 
-const m = moment();
+var clock = document.getElementById("currentTime");
 
-document.getElementById("todaysDate").innerHTML = m.format("dddd MMMM Do YYYY");
+var date = document.getElementById("todaysDate")
 
 const currentHour = moment().format("H");
 
-const clock = moment().format("LTS");
+function clockTimer() {
+    clock.textContent = moment().format("LTS");
+}
 
-console.log(clock);
+function todaysDate() {
+    date.textContent = moment().format("dddd MMMM Do YYYY");
+}
+
+setInterval(todaysDate, 1000);
+
+setInterval(clockTimer, 1000);
 
 function hourTracker() {
 
