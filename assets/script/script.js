@@ -4,6 +4,28 @@ const m = moment();
 
 document.getElementById("todaysDate").innerHTML = m.format("dddd MMMM Do YYYY");
 
+const currentHour = moment().format("H");
+
+const clock = moment().format("LTS");
+
+console.log(clock);
+
+function hourTracker() {
+
+$(".taskText").each(function(i) {
+    const hour = i + 9;
+    if (hour < currentHour) {
+        $(this).addClass("past");
+    }
+    if (hour == currentHour) {
+        $(this).addClass("present");
+    }
+    if (hour > currentHour) {
+        $(this).addClass("future");
+    }
+})
+};
+
 var loadTasks = function() {
     tasks = JSON.parse(localStorage.getItem("tasks"));
     if (!tasks) {
@@ -26,15 +48,15 @@ var saveTasks = function () {
     localStorage.setItem("tasks", JSON.stringify(tasks));
 };
 
-$(".list-group").on("click", "p", function () {
-    // get current text of p element
-    var text = $(this)
-        .text()
-        .trim();
-    var textInput = $("<textarea>").addClass("form-control").val(text);
-    $(this).replaceWith(textInput);
-    textInput.trigger("focus");
-});
+// $(".list-group").on("click", "p", function () {
+//     // get current text of p element
+//     var text = $(this)
+//         .text()
+//         .trim();
+//     var textInput = $("<textarea>").addClass("form-control").val(text);
+//     $(this).replaceWith(textInput);
+//     textInput.trigger("focus");
+// });
 
 $(".list-group").on("blur", "textarea", function () {
     // get current value of textarea
@@ -62,5 +84,5 @@ $(".list-group").on("blur", "textarea", function () {
     $(this).replaceWith(taskP);
 });
 
-
+hourTracker();
 
