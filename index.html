@@ -16,100 +16,85 @@
 <body>
   
   <header class="jumbotron container-fluid d-flex flex-column align-items-center justify-content-center">
-    <h1 class="display-4">Work Day Scheduler</h1>
+    <h1 class="display-5">Work Day Scheduler</h1>
     <p class="lead" id="todaysDate"></p>
-    <h1 class="display-5" id="currentTime"></h1>
+    <h5 class="display-5" id="currentTime"></h5>
   </header>
 
   <div class="scheduleContainer col-12 d-flex justify-content-center">
 
-  <!-- <main class="col-12 col-lg-9 d-flex justify-content-center">
-    <div class="m-5">
-      <ul id="list-toDo" class="list-group"> </ul>
-    </div>
-  </main> -->
-  
-  <div class="modal-body nineAm">
     <form class="timeBlock d-flex justify-content-center">
       <div class="form-group col-8 d-flex row align-items-center justify-content-center">
-        <label class="col-1 card-header bg-info text-light d-flex align-items-center time hour" for="modalTaskDescription">9am</label>
+        <label class="col-1 d-flex align-items-center time hour" for="modalTaskDescription">9am</label>
         <textarea id="9" rows="3" class="col-10 taskText"></textarea>
-        <button type="button" class="btn btn-primary col-1 saveBtn">Save Task</button>
+        <button type="button" class="col-1 saveBtn">Save</button>
       </div>
     </form>
-  </div>
-  <div class="modal-body tenAm">
+
     <form class="timeBlock d-flex justify-content-center">
       <div class="form-group col-8 d-flex row align-items-center justify-content-center">
-        <label class="col-1 card-header bg-info text-light d-flex align-items-center time hour" for="modalTaskDescription">10am</label>
+        <label class="col-1 d-flex align-items-center time hour" for="modalTaskDescription">10am</label>
         <textarea id="10" rows="3" class="col-10 taskText"></textarea>
-        <button type="button" class="btn btn-primary col-1 saveBtn">Save Task</button>
+        <button type="button" class="col-1 saveBtn">Save</button>
       </div>
     </form>
-  </div>
-  <div class="modal-body elevenAm">
+
     <form class="timeBlock d-flex justify-content-center">
       <div class="form-group col-8 d-flex row align-items-center justify-content-center">
-        <label class="col-1 card-header bg-info text-light d-flex align-items-center time hour" for="modalTaskDescription">11am</label>
+        <label class="col-1 d-flex align-items-center time hour" for="modalTaskDescription">11am</label>
         <textarea id="11" rows="3" class="col-10 taskText"></textarea>
-        <button type="button" class="btn btn-primary col-1 saveBtn">Save Task</button>
+        <button type="button" class="col-1 saveBtn">Save</button>
       </div>
-    </form class="timeBlock d-flex justify-content-center">
-  </div>
-  <div class="modal-body twelvePm">
+    </form>
+
     <form class="timeBlock d-flex justify-content-center">
       <div class="form-group col-8 d-flex row align-items-center justify-content-center">
-        <label class="col-1 card-header bg-info text-light d-flex align-items-center time hour" for="modalTaskDescription">12pm</label>
+        <label class="col-1 d-flex align-items-center time hour" for="modalTaskDescription">12pm</label>
         <textarea id="12" rows="3" class="col-10 taskText"></textarea>
-        <button type="button" class="btn btn-primary col-1 saveBtn">Save Task</button>
+        <button type="button" class="col-1 saveBtn">Save</button>
       </div>
     </form>
-  </div>
-  <div class="modal-body onePm">
+
     <form class="timeBlock d-flex justify-content-center">
       <div class="form-group col-8 d-flex row align-items-center justify-content-center">
-        <label class="col-1 card-header bg-info text-light d-flex align-items-center time hour" for="modalTaskDescription">1pm</label>
+        <label class="col-1 d-flex align-items-center time hour" for="modalTaskDescription">1pm</label>
         <textarea id="13" rows="3" class="col-10 taskText"></textarea>
-        <button type="button" class="btn btn-primary col-1 saveBtn">Save Task</button>
+        <button type="button" class="col-1 saveBtn">Save</button>
       </div>
-    </form class="timeBlock d-flex justify-content-center">
-  </div>
-  <div class="modal-body twoPm">
+    </form>
+
     <form class="timeBlock d-flex justify-content-center">
       <div class="form-group col-8 d-flex row align-items-center justify-content-center">
-        <label class="col-1 card-header bg-info text-light d-flex align-items-center time hour" for="modalTaskDescription">1pm</label>
+        <label class="col-1 d-flex align-items-center time hour" for="modalTaskDescription">1pm</label>
         <textarea id="14" rows="3" class="col-10 taskText"></textarea>
-        <button type="button" class="btn btn-primary col-1 saveBtn">Save Task</button>
+        <button type="button" class="col-1 saveBtn">Save</button>
       </div>
     </form>
-  </div>
-  <div class="modal-body threePm">
+
     <form class="timeBlock d-flex justify-content-center">
       <div class="form-group col-8 d-flex row align-items-center justify-content-center">
-        <label class="col-1 card-header bg-info text-light d-flex align-items-center time hour" for="modalTaskDescription">3pm</label>
+        <label class="col-1 d-flex align-items-center time hour" for="modalTaskDescription">3pm</label>
         <textarea id="15" rows="3" class="col-10 taskText"></textarea>
-        <button type="button" class="btn btn-primary col-1 saveBtn">Save Task</button>
+        <button type="button" class="col-1 saveBtn">Save</button>
       </div>
     </form>
-  </div>
-  <div class="modal-body fourPm">
+
     <form class="timeBlock d-flex justify-content-center">
       <div class="form-group col-8 d-flex row align-items-center justify-content-center">
-        <label class="col-1 card-header bg-info text-light d-flex align-items-center time hour" for="modalTaskDescription">4pm</label>
+        <label class="col-1 d-flex align-items-center time hour" for="modalTaskDescription">4pm</label>
         <textarea id="16" rows="3" class="col-10 taskText"></textarea>
-        <button type="button" class="btn btn-primary col-1 saveBtn">Save Task</button>
+        <button type="button" class="col-1 saveBtn">Save</button>
       </div>
     </form>
-  </div>
-  <div class="modal-body fivePm">
+
     <form class="timeBlock d-flex justify-content-center">
       <div class="form-group col-8 d-flex row align-items-center justify-content-center">
-        <label class="col-1 card-header bg-info text-light d-flex align-items-center time hour" for="modalTaskDescription">5pm</label>
+        <label class="col-1 d-flex align-items-center time hour" for="modalTaskDescription">5pm</label>
         <textarea id="17" rows="3" class="col-10 taskText"></textarea>
-        <button type="button" class="btn btn-primary col-1 saveBtn">Save Task</button>
+        <button type="button" class="col-1 saveBtn">Save</button>
       </div>
     </form>
-  </div>
+  
   </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

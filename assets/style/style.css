@@ -1,52 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  background: url("../images/dlxmedia-hu-l7idyRTQePY-unsplash.jpg");
+  background-size: cover;
   font-size: 16px;
   line-height: 1;
+  font-family: Candara;
+}
+
+body .bg {
+
+  height: 100%;
 }
 
 textarea{
-  background: transparent;
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
   padding: 10px;
+}
+
+header {
+  background-image: url("../images/photo-1653984184094-573bd2aec114.avif");
+  background-size: cover;
+  background-position: 30%;
+  position: sticky;
+  z-index: 9999;
+  top: 0;
 }
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  color: white;
   border-radius: 0;
   border-bottom: 10px solid black;
-  height:200px;
+  height:150px;
 }
 
 .taskText {
   background-color: #d3d3d3;
-  color: white;
-  border: 1px solid black;
-  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 .past {
-  background-color: rgb(128,128,128, 0.8);
-  color: white;
+  background-color: rgb(128,128,128, 0.7);
+  color: black;
 }
 
 .present {
-  background-color:#77dd77;
+  background-color: rgb(119,221,119, 0.7);
   color: black;
 }
 
 .future {
-  background-color: #d3d3d3;
+  background-color: rgb(211,211,211,0.7);
   color: black;
 }
 
 .timeBlock {
   width: 100%;
-  height: 100%;
+  height: 84px;
 }
 
 .description{
@@ -66,20 +85,39 @@ textarea{
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
+  height: 30px;
+}
+
+.time {
+  height: 40px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: rgb(91, 192, 222, 0.8);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 .saveBtn {
-  border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: rgb(91, 192, 222, 0.8);
   color: white;
+  border: none;
+  font-size: 16px;
+  height: 50px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 .saveBtn:hover {
-  font-size: 16px;
-  transition: all .3s ease-in-out;
+  font-size: 18px;
+  transition: all .7s ease-in-out;
   padding: 10px 0 10px 0;
+  height: 60px;
+}
+
+.saveBtn:target {
+  font-size: 18px;
+  transition: all .7s ease-in-out;
 }
