@@ -64,24 +64,6 @@ $(".taskText").each(function(i) {
 })
 };
 
-//I'm not sure what this does. It's magic. I'm just kidding, it does.. something
-//(it brings up the edit box)
-$(".list-group").on("blur", "textarea", function () {
-    var text = $(this).val();
-    var status = $(this)
-        .closest(".list-group")
-        .attr("id")
-        .replace("list-", "");
-    var index = $(this)
-        .closest(".list-group-item")
-        .index();
-    tasks[status][index].text = text;
-    var taskP = $("<p>")
-        .addClass("m-1")
-        .text(text);
-    $(this).replaceWith(taskP);
-});
-
 // this save button code commits the task box stuff to local storage via event listener on the save button
 $(".saveBtn").on("click", function () {
     var tasktext = $(this).parent().find(".taskText")
